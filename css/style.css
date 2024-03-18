@@ -1,0 +1,190 @@
+.title-bg{
+    background-color: #e4f9f5;
+    width: 100%;
+    height: 100vh;
+}
+
+.hello{
+    color: blueviolet;
+    font-style: italic;
+    font-family: "Sacramento", cursive;
+    font-size: 100px;
+    padding-left: 150px;
+    padding-top: 200px;
+}
+
+h3{
+    color: black;
+}
+
+.name{
+    color: blueviolet;
+    font-family: sans-serif;
+    padding-left: 150px;
+    font-size: 60px;
+}   
+
+.mountain{
+    position: absolute;
+    left: 500px;
+    bottom: .5px;
+    padding-top: 150px;
+}
+
+.about{
+    background-color: #f9f5e4;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+}
+
+.skills{
+    background-color: #e4f9f5;
+}
+
+.projects{
+    padding-top: 50px;
+    background-color: #f9f5e4;
+}
+
+.abt{
+    font-size: larger;
+}   
+
+
+@media (min-width: 992px) and (max-width: 1400px){
+    .featurette{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    .featurette2{
+        display: grid;
+        grid-template-columns: auto 100%;
+        grid-template-rows: auto auto;
+        gap: 10px;
+    }
+
+    .hello{
+        padding-left: 10px;
+        padding-top: 100px;
+    }
+
+    .name{
+        padding-left: 10px;
+    }
+
+    .mountain{
+        position: absolute;
+        left: 300px;
+        bottom: .5px;
+        padding-top: 150px;
+    }
+
+}
+
+@media (max-width: 992px){
+    .hello{
+        padding-left: 10px;
+        padding-top: 10px;
+        font-size: 48px;
+    }
+
+    .name{
+        padding-left: 10px;
+        font-size: 30px;
+    }
+
+    .mountain{
+        display: block;
+        position: absolute;
+        padding-bottom: 280px;
+        left: 250px;
+        width: 450px;
+    }
+
+    .title-bg{
+        height: 330px;
+    }
+
+    .featurette{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+
+    .featurette2{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        gap: 10px;
+    }
+
+    .txt{
+        grid-area: 1 / 1 / 2 / -1;
+    }
+}
+
+@media (max-width: 770px){
+    .mountain{
+        display: block;
+        position: relative;
+        /* padding-bottom: 490px; */
+        bottom: 200px;
+        left: 10px;
+        width: 400px;
+    }   
+
+    .pic2{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 539px){
+    .proj1{
+        width: 539px;
+    }
+}
+
+@media (min-width: 330px) and (max-width: 539px){
+    .proj1{
+        width: 300px;
+        height: 200px;
+    }
+
+    .name{
+        text-align: left;
+    }
+
+    .hello{
+        text-align: left;
+    }
+
+    .proj2{
+        height: 200px;
+        width: 170px;
+        /* padding-left: 70px; */
+    }
+
+    body{
+        text-align: center;
+    }
+
+    .skills{
+        margin-bottom: 10;
+    }
+
+    .mountain{
+        position: relative;
+        width: 250px;
+        left: -13px;
+        bottom: 183px;
+        height: 650px;
+    }
+
+    .abt{
+        font-size: 17px;
+    }
+}
